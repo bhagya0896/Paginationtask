@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaginationOfStudentsData</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <style>
+p{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+.center {
+  margin:120 px;
+  position: absolute;
+  top: 100%;
+  left: 35%;
+
+}
+.container
+{
+    padding:70px;
+   
+}
+#list
+{
+    text-align: center;
+}
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12" id="con">
+                <p class="h2">Registered Students Data</p>
+            
+               </br>
+               
+              <div id="list"></div>
+            
+        </br>
+                <div class="center">
+                    <button type="button" class="btn btn-primary" onclick="firstPage()"  >First</button>
+                    <button type="button" class="btn btn-secondary" onclick="nextPage() ">Next</button>
+                    <button type="button" class="btn btn-primary" onclick="previousPage() ">Previous</button>
+                    <button type="button" class="btn btn-secondary"  onclick="lastPage()" >Last</button>
+                </div>
+              
+                
+            </div>
+        </div>
+    </div>
+    <script src="scriptjs.js"></script>
+</body>
+</html>
